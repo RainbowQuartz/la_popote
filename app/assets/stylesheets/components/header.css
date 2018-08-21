@@ -1,0 +1,21 @@
+.navbar{
+	overflow: hidden;
+	float: top;
+	font-family: 'Archivo Black', sans-serif;
+	background-color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+}
+
+
+.navbar h1{
+	font-weight: bold;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	color: #ffff;
+	font-size: 60px;
+}
+.text-shadow-pop-right{
+text-shadow: 1px 1px #E82C0C, 2px 2px #E82C0C, 3px 3px #E82C0C, 4px 4px #E82C0C, 5px 5px #E82C0C, 6px 6px #E82C0C, 7px 7px #E82C0C, 8px 8px #E82C0C;
+}

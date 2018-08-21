@@ -1,0 +1,12 @@
+ .footer{
+	font-family: 'Archivo Black', sans-serif;
+	background-color: black;
+	display: flex;
+	width: 100%;
+}
+
+.footer p{
+	color: white;
+	text-align: right;
+	margin-left: 15px;
+}
