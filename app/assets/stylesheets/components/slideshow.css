@@ -1,5 +1,9 @@
  * {box-sizing:border-box}
 
+.banner{
+  margin-top: 30px;
+}
+
  .banner img{
 	position: relative;
 	width: 100%;
