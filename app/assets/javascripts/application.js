@@ -22,6 +22,14 @@ $(document).ready(function(){
     $(".container-3").hide();
     var slideIndex = 1;
     showSlides(slideIndex);
+    $(".prev").click(function(){
+      clearTimeout(showSlides);
+      showSlides(slideIndex --);
+    });
+    $(".next").click(function(){
+      clearTimeout(showSlides);
+      showSlides(slideIndex ++);
+    })
 
     $("#button-1").click(function(){
         $(".container-2").hide();
@@ -42,10 +50,6 @@ $(document).ready(function(){
 
 var slideIndex = 1;
 showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -62,9 +66,9 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slideIndex ++;
-  if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  slideIndex ++;
+  if (slideIndex > slides.length) {slideIndex = 1}
   setTimeout(showSlides, 5000);
 }
