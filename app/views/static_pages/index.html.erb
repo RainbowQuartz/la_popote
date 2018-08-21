@@ -1,73 +1,70 @@
-<div class="tabs">
-	<div class="buttons">
-		<button class="button" id="button-1" type="button">C'est</button>
-		<button class="button" id="button-2" type="button">De la</button>
-		<button class="button" id="button-3" type="button">Merde</button>
+<div class="container">
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+	 <!-- Full-width images with number and caption text -->
+	 <div class="mySlides fade">
+		 <div class="numbertext">1 / 5</div>
+		 <%= link_to (image_tag("burger.jpg"))%>
+		 <div class="text">Caption Text</div>
+	 </div>
+	 <div class="mySlides fade">
+		 <div class="numbertext">2 / 5</div>
+		 <%= link_to (image_tag("fries2.jpg"))%>
+		 <div class="text">Caption Two</div>
+	 </div>
+	 <div class="mySlides fade">
+		 <div class="numbertext">3 / 5</div>
+		 <%= link_to (image_tag("kebab.jpg"))%>
+		 <div class="text">Caption Three</div>
+	 </div>
+	 <div class="mySlides fade">
+		 <div class="numbertext">4 / 5</div>
+		 <%= link_to (image_tag("tacos.jpg"))%>
+		 <div class="text">Caption Four</div>
+	 </div>
+	 <div class="mySlides fade">
+		 <div class="numbertext">5 / 5</div>
+		 <%= link_to (image_tag("donuts.jpg"))%>
+		 <div class="text">Caption Five</div>
+	 </div>
+	 <!-- Next and previous buttons -->
+	 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
-	<div class="container">
-		<div class="container-1">
-			<h3>En mémoire à Jean pierre Coffe.</h3>
-			<p>RIP en paix, petit ange parti trop tôt.</p>
-			<%= link_to (image_tag("jean-pierre-coffe.jpg"))%>
-		</div>
-
-		<div class="container-2">
-			<h3>Caca dans les ravioli</h3>
-              <p>Nam cursus, massa ac imperdiet posuere, mauris metus gravida ligula, et rutrum ligula mi ut tellus. Quisque elit dolor, sagittis ac purus accumsan, sagittis rhoncus felis. Morbi nec bibendum arcu, sit amet pharetra orci. Nulla pulvinar ultrices quam. Cras nulla erat, eleifend non euismod vel, accumsan quis lacus. Ut bibendum augue vel magna rhoncus, sed rutrum massa vulputate. Nullam lectus diam, venenatis vel elit vel, ornare fermentum metus. Praesent euismod non mauris et dignissim. Sed in diam nec diam pellentesque lacinia at vitae lorem. Quisque et neque condimentum, viverra dolor mollis, feugiat justo.</p>
-		</div>
-
-		<div class="container-3">
-			<h3>Ca se bouffe pas, ça se mange !</h3>
-              <p>Suspendisse vulputate nunc ac pretium pulvinar. Morbi pretium quis erat non vehicula. Phasellus porta dolor velit, vitae consectetur nisl consequat at. Praesent ac accumsan urna. Mauris lorem purus, pharetra ac ultrices sit amet, pulvinar sed sapien. Phasellus ornare laoreet dui, et eleifend risus tristique non. Donec lectus dolor, iaculis non tellus vitae, venenatis sagittis purus. Sed at rhoncus neque. Suspendisse gravida est eu consectetur tincidunt. Aliquam fermentum gravida fringilla</p>
-		</div>
-
+	<br>
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+	 <span class="dot" onclick="currentSlide(1)"></span>
+	 <span class="dot" onclick="currentSlide(2)"></span>
+	 <span class="dot" onclick="currentSlide(3)"></span>
+	 <span class="dot" onclick="currentSlide(4)"></span>
+	 <span class="dot" onclick="currentSlide(5)"></span>
 	</div>
 </div>
-<!-- Slideshow container -->
-<div class="slideshow-container">
+<div class="container">
+	<div class="tabs">
+		<div class="buttons">
+			<button class="button" id="button-1" type="button">C'est</button>
+			<button class="button" id="button-2" type="button">De la</button>
+			<button class="button" id="button-3" type="button">Merde</button>
+		</div>
+		<div class="container">
+			<div class="container-1">
+				<h3>En mémoire à Jean pierre Coffe.</h3>
+				<p>RIP en paix, petit ange parti trop tôt.</p>
+				<%= link_to (image_tag("jean-pierre-coffe.jpg"))%>
+			</div>
 
- <!-- Full-width images with number and caption text -->
- <div class="mySlides fade">
-	 <div class="numbertext">1 / 5</div>
-	 <%= link_to (image_tag("burger.jpg"))%>
-	 <div class="text">Caption Text</div>
- </div>
+			<div class="container-2">
+				<h3>Caca dans les ravioli</h3>
+	              <p>Nam cursus, massa ac imperdiet posuere, mauris metus gravida ligula, et rutrum ligula mi ut tellus. Quisque elit dolor, sagittis ac purus accumsan, sagittis rhoncus felis. Morbi nec bibendum arcu, sit amet pharetra orci. Nulla pulvinar ultrices quam. Cras nulla erat, eleifend non euismod vel, accumsan quis lacus. Ut bibendum augue vel magna rhoncus, sed rutrum massa vulputate. Nullam lectus diam, venenatis vel elit vel, ornare fermentum metus. Praesent euismod non mauris et dignissim. Sed in diam nec diam pellentesque lacinia at vitae lorem. Quisque et neque condimentum, viverra dolor mollis, feugiat justo.</p>
+			</div>
 
- <div class="mySlides fade">
-	 <div class="numbertext">2 / 5</div>
-	 <%= link_to (image_tag("fries2.jpg"))%>
-	 <div class="text">Caption Two</div>
- </div>
+			<div class="container-3">
+				<h3>Ca se bouffe pas, ça se mange !</h3>
+	              <p>Suspendisse vulputate nunc ac pretium pulvinar. Morbi pretium quis erat non vehicula. Phasellus porta dolor velit, vitae consectetur nisl consequat at. Praesent ac accumsan urna. Mauris lorem purus, pharetra ac ultrices sit amet, pulvinar sed sapien. Phasellus ornare laoreet dui, et eleifend risus tristique non. Donec lectus dolor, iaculis non tellus vitae, venenatis sagittis purus. Sed at rhoncus neque. Suspendisse gravida est eu consectetur tincidunt. Aliquam fermentum gravida fringilla</p>
+			</div>
 
- <div class="mySlides fade">
-	 <div class="numbertext">3 / 5</div>
-	 <%= link_to (image_tag("kebab.jpg"))%>
-	 <div class="text">Caption Three</div>
- </div>
-
- <div class="mySlides fade">
-	 <div class="numbertext">4 / 5</div>
-	 <%= link_to (image_tag("tacos.jpg"))%>
-	 <div class="text">Caption Four</div>
- </div>
-
- <div class="mySlides fade">
-	 <div class="numbertext">5 / 5</div>
-	 <%= link_to (image_tag("donuts.jpg"))%>
-	 <div class="text">Caption Five</div>
- </div>
-
- <!-- Next and previous buttons -->
- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
- <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
- <span class="dot" onclick="currentSlide(1)"></span>
- <span class="dot" onclick="currentSlide(2)"></span>
- <span class="dot" onclick="currentSlide(3)"></span>
- <span class="dot" onclick="currentSlide(4)"></span>
- <span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+	</div>
 </div>
