@@ -13,4 +13,27 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery3
+//= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+    $(".container-2").hide();
+    $(".container-3").hide();
+
+    $("#button-1").click(function(){
+        $(".container-2").hide();
+        $(".container-3").hide();
+        $(".container-1").show();
+    });
+    $("#button-2").click(function(){
+        $(".container-1").hide();
+        $(".container-3").hide();
+        $(".container-2").show();
+    });
+    $("#button-3").click(function(){
+        $(".container-1").hide();
+        $(".container-2").hide();
+        $(".container-3").show();
+    });
+});
